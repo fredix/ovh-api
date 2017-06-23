@@ -34,4 +34,4 @@ Usage of move_ip:
   -ip string
     	your ip failover (default "xx.xx.xx.xx")
 
-move_ip move the ip failover on the host running move_ip.
+move_ip move the ip failover on the host running move_ip. move_ip should be run by keepalived to notify OVH to switch your IP_FAILOVER on the new master.
