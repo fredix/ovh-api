@@ -20,9 +20,9 @@ Usage of ./get_service:
 
 get_service return the service name (aka your VPS) associate to your ip failover, ie :
 
-serviceName :  {fi {vpsxxxx.ovh.net}}
+serviceName :  {fr {vpsxxxx.ovh.net}}
 
-fi is the country code of your ip, vpsxxx.ovh.net the service name (hostname) of your vps. 
+fr is the country code of your ip, vpsxxx.ovh.net the service name (hostname) of your vps. 
 
 move_ip -h               
 Usage of move_ip:
