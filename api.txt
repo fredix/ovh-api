@@ -1,0 +1,54 @@
+
+MOVE IP :
+
+https://eu.api.ovh.com/console/#/ip
+
+
+GET /ip/{ip} IP_FAILOVER
+
+{
+
+    organisationId: null
+    country: "fi"
+    -
+    routedTo: {
+        serviceName: "vpsxxx.ovh.net"
+    }
+    ip: "IP_FAILOVER/32"
+    canBeTerminated: true
+    type: "failover"
+    description: null
+
+}
+
+
+POST /ip/{ip}/move IP_FAILOVER TO vpsxxxx.ovh.net
+
+{
+
+    taskId: ID
+    function: "genericMoveFloatingIp"
+    lastUpdate: "2017-06-22T21:51:33+02:00"
+    comment: null
+    status: "todo"
+    startDate: "2017-06-22T21:51:33+02:00"
+    doneDate: null
+
+}
+
+
+GET /ip/{ip}/task/{taskId} ID
+{
+
+    taskId: ID
+    function: "genericMoveFloatingIp"
+    status: "done"
+    destination: null
+    lastUpdate: "2017-06-22T21:53:23+02:00"
+    comment: null
+    startDate: "2017-06-22T21:51:33+02:00"
+    doneDate: "2017-06-22T21:53:23+02:00"
+
+}
+
+
